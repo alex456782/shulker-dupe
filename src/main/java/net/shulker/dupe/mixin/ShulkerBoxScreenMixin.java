@@ -34,6 +34,10 @@ public class ShulkerBoxScreenMixin extends Screen {
                 if (shouldDupe) shouldDupe = false;
                 shouldDupeAll = true;
             }));
+            this.addDrawableChild(new ButtonWidget(this.width/2+60, this.height/2+35-145, 50, 20, Text.of("Dupe Addon"), (button) -> {
+                if (shouldDupe) shouldDupe = true;
+                shouldDupeAll = true;
+            }));
         }
 
         if (this.width != MainClient.thex || this.height != MainClient.they) {
