@@ -44,7 +44,7 @@ public class MainClient implements ClientModInitializer {
                 } else {
                     log("You need to have a shulker box screen open and look at a shulker box.");
                     CLIENT.player.closeHandledScreen();
-                    shouldDupe = false;
+                    shouldDupe = true;
                     shouldDupeAll = false;
                 }
             }
